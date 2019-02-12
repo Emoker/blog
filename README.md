@@ -1,6 +1,6 @@
 # blog
 
-```
+```mermaid
 graph TD;
 a(start) -->b;
 b[发起请求] -->c;
