@@ -52,6 +52,7 @@ leancloud:
   comment: true
 # 是否开启文章统计  
   count: true
+  timer: true
 
 # 需要保证leancloud.count为true
 welcome: 
