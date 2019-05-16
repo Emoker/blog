@@ -45,9 +45,9 @@ start_time: "2019-05-15"
 # 请申请自己的 appid 和 appkey，并且替换下面的 appid 和 appkey
 leancloud:
 # 填写您的appid
-  appid: Hyq9wkH495DgNHWhDQCOfQSp-gzGzoHsz
+  appid: OkcRvs457liULCRbwV4HXXPB-gzGzoHsz
   # 填写您的appkey
-  appkey: WaR7nrzhliHj9aVwdQzkdlGd
+  appkey: PPVxnfdGCBBWx5L5uDwwWt7E
   # 是否开启评论系统
   comment: true
 # 是否开启文章统计  
@@ -146,13 +146,13 @@ footer:
         name: "思否"
         path: "https://segmentfault.com/"
 
-footer_contact: "Email: yuanxin.me@gmail.com"
+footer_contact: "Email: emoker@qq.com"
 
 friends_avatar_cdn: 
 friends:
   -
     nickname: GodBMW
-    avatar: /images/friends/godbmw.jpeg
+    avatar: https://avatars0.githubusercontent.com/u/26399528?s=460&v=4
     site: https://godbmw.com/
     meta: 主题作者
     show: true
