@@ -91,7 +91,7 @@ main {
   height: 50px;
   background: #F5F5F5;
   overflow: auto;
-  z-index: 300;
+  z-index: 901;
 }
 
 .bottom-bar-left,
@@ -190,7 +190,7 @@ main {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.8); */
 }
 
 .site-layer-content {

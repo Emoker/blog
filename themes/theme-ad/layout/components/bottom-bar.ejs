@@ -57,17 +57,17 @@
       <i class="fa fa-bars"></i>
     </a>
     <% if(theme.leancloud.comment || theme.disqus.enable) { %>
-      <a href="<%- comments.enable ? comments.link : 'javascript:void(0);' %>" data-enable="<%- comments.enable %>">
-        <i class="fa fa-commenting"></i>
-      </a>
+    <a href="<%- comments.enable ? comments.link : 'javascript:void(0);' %>" data-enable="<%- comments.enable %>">
+      <i class="fa fa-commenting"></i>
+    </a>
     <% } %>
     <a href="javascript:void(0);" id="site-toggle-share-btn">
       <i class="fa fa-share-alt"></i>
     </a>
     <% if(Array.isArray(theme.reward) && theme.reward.length) { %>
-      <a href="javascript:void(0);" id="site-reward">
-        <i class="fa fa-heart"></i>
-      </a>
+    <a href="javascript:void(0);" id="site-reward">
+      <i class="fa fa-heart"></i>
+    </a>
     <% } %>
     <a href="javascript:void(0);" id="back-top-btn">
       <i class="fa fa-chevron-up"></i>

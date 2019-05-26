@@ -4,7 +4,7 @@
 
 # Site
 title: Emoker
-subtitle: emoker's blog for testing.
+subtitle: 别拖至春天
 description:
 keywords:
 author: Emoker
@@ -74,6 +74,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: theme-ad
+# theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -81,6 +82,28 @@ deploy:
   type: git
   repo: https://github.com/emoker/emoker.github.io.git
   branch: master
+
+# Algolia Search [fail]
+algolia:
+  applicationID: 'O7B6MN0H3I'
+  apiKey: '002ccaf34b6e3a920d190a7c53f7b8b6'
+  indexName: 'hexo-emok'
+  chunkSize: 5000
+
+# Loval search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# if you don't care security about leancloud, just forgot here.
+leancloud_counter_security:
+ enable_sync: true
+ app_id: OkcRvs457liULCRbwV4HXXPB-gzGzoHsz
+ app_key: PPVxnfdGCBBWx5L5uDwwWt7E
+ username: emoker@qq.com # Will be asked while deploying if is left blank
+ password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
 
 alias:
   /: /emoker.github.io
