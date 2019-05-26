@@ -1,0 +1,54 @@
+---
+title: js 闭包快速理解
+date: 2019-05-24 16:13:56
+categories:
+tags:
+
+- JavaScript
+- js
+- 笔记
+
+---
+
+#### 什么是闭包
+
+> 来自百度： 闭包就是能够读取其他函数内部变量的函数。 例如在javascript中， 只有函数内部的子函数才能读取局部变量， 所以闭包可以理解成“定义在一个函数内部的函数“。 在本质上， 闭包是将函数内部和函数外部连接起来的桥梁。 
+>  
+> 个人理解： 闭包可以理解成js版本的封装
+
+为了避免参数污染， 通过在函数内部定义变量， 并通过子函数进行操作， 并讲子函数暴露给外部环境进行引用， 这种程序结构就叫做闭包。 
+<!-- more -->
+
+##### 举例： 
+
+当function里嵌套function时， 内部的function可以访问外部function里的变量。 不管执行多少次， 都会alert 16。 
+
+```
+function foo(x) {
+    var tmp = 3;
+
+    function bar(y) {
+        alert(x + y + (++tmp));
+    }
+    bar(10);
+}
+foo(2)
+```
+
+上面的代码运行后的结果并不是闭包， 只是展示内部的function使用对外部function里的变量的过程。 
+ 
+如果你把上面代码中的内部函数bar() 单独返回出去， 并运行他的时候， 内部函数bar() 依然可以访问外部函数foo() 的变量， 这个时候就是闭包。 内部function会close-over外部function的变量直到内部function结束。 
+
+```
+function foo(x) {
+    var tmp = 3;
+    return function(y) {
+        alert(x + y + (++tmp));
+    }
+}
+var bar = foo(2); // bar 现在是一个闭包
+bar(10);
+```
+
+但是， 由于tmp仍存在于bar闭包的内部， 所以它还是会自加1， 而且你每次调用bar时它都会自加1.
+
