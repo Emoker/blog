@@ -90,7 +90,7 @@ algolia:
   indexName: 'hexo-emok'
   chunkSize: 5000
 
-# Loval search
+# Local search
 search:
   path: search.xml
   field: post
