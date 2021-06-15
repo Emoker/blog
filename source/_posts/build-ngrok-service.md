@@ -80,7 +80,7 @@ C-- > D
 ```
 #
 CentOS 7
-yum - y install zlib - devel openssl - devel perl hg cpio expat - devel gettext - devel curl curl - devel perl - ExtUtils - MakeMaker hg wget gcc gcc - c++
+yum -y install zlib-devel openssl-devel perl hg cpio expat-devel gettext-devel curl curl-devel perl-ExtUtils-MakeMaker hg wget gcc gcc-c++
 ```
 
 ##### 下载ngrok源码
@@ -90,7 +90,7 @@ yum - y install zlib - devel openssl - devel perl hg cpio expat - devel gettext 
 ```
 #
 CentOS
-yum– y install git
+yum –y install git
 ```
 
 或者可以下载Git安装包进行安装， 参考 [这篇文章](http://note.youdao.com/noteshare?id=52b0b40cd61272f497386c9854597906)
@@ -115,7 +115,7 @@ git clone https: //github.com/inconshreveable/ngrok.git
 ```
 #
 CentOS
-yum install open - ssl
+yum install open-ssl
 ```
 
   
